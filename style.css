@@ -4,7 +4,7 @@ body {
 }
 
 .flex-container{
-  padding: 50px;
+  padding: 39px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -19,7 +19,8 @@ body {
   width: 500px;
   height: 200px;
   text-align: center;
-  margin: 5px;
+  margin: 10px;
+  padding: 2px;
   border-radius: 25px;
   transition: background-color 0.5s;
 }
@@ -30,20 +31,50 @@ body {
 
 .c1 {
   flex-grow: 6; 
+  min-width: 250px;
+  position: relative;
 }
 
 .c1 h2 {
   color: #fbf1c7;
-  font-size: 35px;
+  font-size: 50px;
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  text-align: center;
+  transition: color 0.2s;
 }
 
 .c1 p {
   color: #458588;
+  position: absolute;
+  font-size: 25px;
+  top: 100px;
+  left: 191px;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #83a598;
 }
 
+.Avatar {
+  width:150px;
+  border-radius:50%;
+  box-shadow: 0 0 10px #d5c4a1;
+  transition: box-shadow 0.2s;
+  margin: 25px;
+  float: left;
+}
+
+.Avatar:hover {
+  box-shadow: 0 0 15px #fbf1c7;
+
+}
 
 .c2 {
   flex-grow: 1;
+  min-width: 50px;
 }
 
 .c3 {
