@@ -1,10 +1,15 @@
+/* Import nerdfonts */
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
 body {
   background-color: #1d2021;
-  font-family: monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 .flex-container{
-  padding: 39px;
+  padding: 15px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -30,7 +35,7 @@ body {
 }
 
 .c1 {
-  flex-grow: 6; 
+  flex-grow: 5; 
   min-width: 250px;
   position: relative;
 }
@@ -58,6 +63,12 @@ body {
   -webkit-text-stroke-color: #83a598;
 }
 
+.languages {
+  position: absolute;
+  top: 120px;
+  left: 191px;
+}
+
 .Avatar {
   width:150px;
   border-radius:50%;
@@ -75,20 +86,55 @@ body {
 .c2 {
   flex-grow: 1;
   min-width: 50px;
+  background-color: #1d2021;
+}
+
+.c2:hover {
+  background-color: #282828;
+}
+
+.nf {
+  font-size: 65px;
+  margin: 5px;
+}
+
+.nf-fa-html5 {
+  color: orange;
+}
+
+.nf-dev-css3 {
+  color: blue;
+}
+
+.nf-dev-javascript_badge {
+  color: yellow;
+}
+
+.nf-dev-react {
+  color: cyan;
+}
+
+.nf-dev-rust {
+  color: red;
+}
+
+.nf-dev-python {
+  color: lightblue;
 }
 
 .c3 {
-  flex-grow: 1;
+  flex-grow: 5;
+}
+
+.c3 p {
+  text-align: left;
 }
 
 .c4 {
-  flex-grow: 6;
+ flex-grow: 1;
 }
 
 .c5 {
   flex-grow: 6;
 }
 
-.c6 {
-  flex-grow: 1;
-}
