@@ -238,12 +238,12 @@ h1 {
 }
 
 .c4 p {
-  font-size: large;
+  margin-top: auto;
   margin-left: 3%;
   margin-right: 3%;
   text-align: justify;
   text-indent: 10vh;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 
 .c5 {
