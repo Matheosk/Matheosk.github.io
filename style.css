@@ -20,13 +20,20 @@ body{
 
 .c3 a {
   font-size: 7.5vh;
+}
+
+a {
   text-decoration: solid;
   color: #fbf1c7;
   transition: color 250ms ease 0s;
 }
 
-.c3 a:hover {
+a:hover {
   color: #488588;
+}
+
+.c4 p {
+  text-align: justify;
 }
 
 .c4 p strong {
@@ -54,6 +61,12 @@ body{
   color: #7c6f64;
 }
 
+.plinks a {
+  margin: 1vh;
+  padding: 0.2vh;
+  border-radius: 0.5vh;
+  background-color: #7c6f64;
+}
 
 /* Mobile Style */
 @media screen and (max-width: 768px){
@@ -110,12 +123,49 @@ h1 {
   margin: 1vh;
 }
 
-.c3 {
-  
+.c4 p {
+  text-indent: 5vw;
+  text-align: justify;
+  word-wrap: break-word;
+  font-size: 5vw;
+}
+
+.carousel-button {
+  display: none;
 }
 
 
+.project {
+  background-color: #504945;
+  width: 90%;
+  aspect-ratio: 25/9;
+  margin-top: 3vw;
+  border-radius: 3vw;
+  padding-top: 1vh;
+  padding-left: 1vw;
 }
+
+.project h2 {
+  margin: 0;
+  margin-left: 1vh;
+  font-size: 3vh;
+}
+
+/* Color for Web Projects*/
+.p1,
+.p2 {
+  border-left: #d65d0e solid 2vw;
+}
+
+/* Color for Rust Projects*/
+.p3 {
+  border-left: #cc241d solid 2vw;
+}
+
+}
+
+
+
 
 /* Computer Style */
 @media screen and (min-width: 768px){
@@ -253,6 +303,67 @@ h1 {
 .c5 h1{
   text-align: center;
   font-size: 5vh;
+}
+
+.pcontainer {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.pslide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.project {
+  background-color: #504945;
+  width: 15vw;
+  aspect-ratio: 25/9;
+  margin-left: 3vw;
+  border-radius: 1vw;
+  padding-top: 1vh;
+  padding-left: 1vw;
+}
+
+.project h2 {
+  margin: 0;
+  margin-left: 1vh;
+  font-size: 3vh;
+}
+
+.plinks {
+  display: flex;
+}
+
+.carousel-button {
+  position: absolute;
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 1;
+  color: #fbf1c7;
+  font-size: 3vh;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+/* Color for Web Projects*/
+.p1,
+.p2 {
+  border-left: #d65d0e solid 0.5vw;
+}
+
+/* Color for Rust Projects*/
+.p3 {
+  border-left: #cc241d solid 0.5vw;
 }
 
 }
