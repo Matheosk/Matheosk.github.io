@@ -2,139 +2,250 @@
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-
-body {
-  background-color: #1d2021;
+/* Universal style*/
+body{
+  background: #1d2021;
+  color: #fbf1c7;
   font-family: "Source Code Pro", monospace;
 }
 
-.flex-container{
-  padding: 15px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-content: center;
+.image img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 1vh 0.5vh #ebdbb2;
 }
 
-
-.caja {
-  background-color: #282828;
-  color: #fbf1c7;
-  font-weight: bold;
-  width: 500px;
-  height: 200px;
-  text-align: center;
-  margin: 10px;
-  padding: 2px;
-  border-radius: 25px;
-  transition: background-color 0.5s;
-}
-
-.caja:hover {
-  background-color: #3c3836;
-}
-
-.c1 {
-  flex-grow: 5; 
-  min-width: 250px;
-  position: relative;
-}
-
-.c1 h2 {
-  color: #fbf1c7;
-  font-size: 50px;
-  position: absolute;
-  top: 20px;
-  left: 200px;
-  text-align: center;
-  transition: color 0.2s;
-}
-
-.c1 p {
-  color: #458588;
-  position: absolute;
-  font-size: 25px;
-  top: 100px;
-  left: 191px;
-  padding: 10px;
-  margin: 0;
-  z-index: 1;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #83a598;
-}
-
-.languages {
-  position: absolute;
-  top: 120px;
-  left: 191px;
-}
-
-.Avatar {
-  width:150px;
-  border-radius:50%;
-  box-shadow: 0 0 10px #d5c4a1;
-  transition: box-shadow 0.2s;
-  margin: 25px;
-  float: left;
-}
-
-.Avatar:hover {
-  box-shadow: 0 0 15px #fbf1c7;
-
-}
-
-.c2 {
-  flex-grow: 1;
-  min-width: 50px;
-  background-color: #1d2021;
-}
-
-.c2:hover {
-  background-color: #282828;
-}
-
-.nf {
-  font-size: 65px;
-  margin: 5px;
+.c2 h2 {
+  word-wrap: break-word;
 }
 
 .nf-fa-html5 {
-  color: orange;
+  color: #d65d0e;
 }
 
 .nf-dev-css3 {
-  color: blue;
+  color: #458588;
 }
 
 .nf-dev-javascript_badge {
-  color: yellow;
-}
-
-.nf-dev-react {
-  color: cyan;
+  color: #d79921;
 }
 
 .nf-dev-rust {
-  color: red;
+  color: #cc241d;
 }
 
 .nf-dev-python {
-  color: lightblue;
+  color: #7c6f64;
+}
+
+
+/* Mobile Style */
+@media screen and (max-width: 768px){
+
+h1 {
+  text-align: center;
+}
+.caja {
+  background: #282828;
+  transition: background 250ms ease 0s;
+  margin: 1.5vh;
+  padding: 5vh;
+  border-radius: 3vh;
+}
+
+.c1 {
+  text-align: center;
+  padding-bottom: 1vh;
+}
+
+.image img {
+  height: 25vh;
+  margin: 0;
+}
+
+.name h1 {
+  font-size: 6vh;
+  margin-top: 2vh;
+  margin-bottom: 0;
+}
+
+.dev h3 {
+  color: #458588;
+  font-size: 3.5vh;
+  margin-top: 0;
+}
+
+.c2 h1 {
+  margin: 0;
+}
+
+.c2 h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 10vh;
+}
+
+.nf {
+  margin: 1vh;
+}
+
+
+}
+
+
+
+
+/* Computer Style */
+@media screen and (min-width: 768px){
+
+.grid-layout{
+  display: grid;
+  grid-template-columns: 34% 33% 33%;
+}
+
+.caja {
+  background: #282828;
+  transition: background 250ms ease 0s;
+  margin: 1.5vh;
+  height: 29.5vh;
+  border-radius: 3vh;
+}
+
+.caja:hover {
+  background: #3c3836;
+}
+
+.c1 {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: auto auto;
+  padding: 0;
+}
+
+
+.image {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  position: relative;
+}
+
+.image img {
+  border-radius: 50%;
+  height: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 1vh 0.2vh #ebdbb2;
+  transition: box-shadow 250ms ease 0s;
+}
+
+.image img:hover {
+  box-shadow: 0px 0px 2vh 0.5vh #fbf1c7;
+}
+
+.name {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  position: relative;
+}
+
+.name h1 {
+  font-size: 7vh;
+  position: absolute;
+  top: 4vh;
+  bottom: auto;
+}
+
+.dev {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  position: relative;
+  color: #458588;
+}
+
+.dev h3 {
+  font-size: 3.5vh;
+  position: absolute;
+  bottom: 6vh;
+  top: auto;
+}
+
+.c2 {
+  grid-column: 3/4;
+  text-align: center;
+}
+
+.c2 h1 {
+  font-size: 2.5vw;
+  margin-bottom: 0;
+}
+
+.c2 h2 {
+  font-size: 7vh;
+  margin-top: 2vh;
+  line-height: 7vh;
+}
+
+.nf {
+  margin-right: 2.5%;
+  margin-left: 2.5%;
 }
 
 .c3 {
-  flex-grow: 5;
+  grid-column: 1/2;
+  text-align: center;
 }
 
-.c3 p {
-  text-align: left;
+.c3 h1 {
+  font-size: 5vh;
 }
+
+.c3 a {
+  font-size: 7.5vh;
+  text-decoration: solid;
+  color: #fbf1c7;
+  transition: color 250ms ease 0s;
+}
+
+.c3 a:hover {
+  color: #488588;
+}
+
 
 .c4 {
- flex-grow: 1;
+  grid-column: 2/4;
+}
+
+.c4 h1{
+  margin-top: 3vh;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 5vh;
+}
+
+.c4 p {
+  font-size: large;
+  margin-left: 3%;
+  margin-right: 3%;
+  text-align: justify;
+  text-indent: 10vh;
+  font-size: 3vh;
+}
+
+.c4 p strong {
+  color: #98971a;
+  font-weight: bolder;
 }
 
 .c5 {
-  flex-grow: 6;
+  grid-column: 1/4;
 }
 
+.c5 h1{
+  text-align: center;
+  font-size: 5vh;
+}
+
+}
