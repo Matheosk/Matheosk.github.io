@@ -18,6 +18,22 @@ body{
   word-wrap: break-word;
 }
 
+.c3 a {
+  font-size: 7.5vh;
+  text-decoration: solid;
+  color: #fbf1c7;
+  transition: color 250ms ease 0s;
+}
+
+.c3 a:hover {
+  color: #488588;
+}
+
+.c4 p strong {
+  color: #458588;
+  font-weight: bolder;
+}
+
 .nf-fa-html5 {
   color: #d65d0e;
 }
@@ -44,6 +60,7 @@ body{
 
 h1 {
   text-align: center;
+  margin-top: 0;
 }
 .caja {
   background: #282828;
@@ -85,15 +102,20 @@ h1 {
   font-size: 10vh;
 }
 
+.c3 {
+  text-align: center;
+}
+
 .nf {
   margin: 1vh;
 }
 
-
+.c3 {
+  
 }
 
 
-
+}
 
 /* Computer Style */
 @media screen and (min-width: 768px){
@@ -202,16 +224,6 @@ h1 {
   font-size: 5vh;
 }
 
-.c3 a {
-  font-size: 7.5vh;
-  text-decoration: solid;
-  color: #fbf1c7;
-  transition: color 250ms ease 0s;
-}
-
-.c3 a:hover {
-  color: #488588;
-}
 
 
 .c4 {
@@ -232,11 +244,6 @@ h1 {
   text-align: justify;
   text-indent: 10vh;
   font-size: 3vh;
-}
-
-.c4 p strong {
-  color: #98971a;
-  font-weight: bolder;
 }
 
 .c5 {
