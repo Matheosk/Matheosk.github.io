@@ -41,18 +41,6 @@ a:hover {
   font-weight: bolder;
 }
 
-.nf-fa-html5 {
-  color: #d65d0e;
-}
-
-.nf-dev-css3 {
-  color: #458588;
-}
-
-.nf-dev-javascript_badge {
-  color: #d79921;
-}
-
 .plinks a {
   margin: 1vh;
   padding: 0.2vh;
@@ -145,12 +133,22 @@ h1 {
   border-left: #d65d0e solid 2vw;
 }
 
-/* Color for Rust Projects*/
-.p3 {
-  border-left: #cc241d solid 2vw;
+.nf-fa-html5 {
+  color: #d65d0e;
 }
 
+.nf-dev-css3 {
+  color: #458588;
 }
+
+.nf-dev-javascript_badge {
+  color: #d79921;
+}
+
+
+}
+
+
 
 
 
@@ -251,7 +249,26 @@ h1 {
 .nf {
   margin-right: 2.5%;
   margin-left: 2.5%;
+  transition: color 0.25s;
 }
+
+.nf-fa-html5:hover {
+  color: #d65d0e;
+}
+
+.nf-dev-css3:hover {
+  color: #458588;
+}
+
+.nf-dev-javascript_badge:hover {
+  color: #d79921;
+}
+
+.nf-dev-linux:hover {
+  color: #1d2021;
+}
+
+
 
 .c3 {
   grid-column: 1/2;
