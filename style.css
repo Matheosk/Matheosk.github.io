@@ -317,17 +317,14 @@ h1 {
 
 .project {
   background-color: #504945;
-  width: 15vw;
-  aspect-ratio: 25/9;
+  width: 17vw;
   margin-left: 1.5vw;
   border-radius: 1vw;
-  padding-top: 1vh;
-  padding-left: 1vw;
+  padding: 1vh;
 }
 
 .project h2 {
   margin: 0;
-  margin-left: 1vh;
   font-size: 3vh;
 }
 
