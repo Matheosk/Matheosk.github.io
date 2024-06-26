@@ -127,9 +127,7 @@ h1 {
   font-size: 3vh;
 }
 
-/* Color for Web Projects*/
-.p1,
-.p2 {
+.html {
   border-left: #d65d0e solid 2vw;
 }
 
@@ -351,15 +349,8 @@ h1 {
   right: 10px;
 }
 
-/* Color for Web Projects*/
-.p1,
-.p2 {
+.html {
   border-left: #d65d0e solid 0.5vw;
-}
-
-/* Color for Rust Projects*/
-.p3 {
-  border-left: #cc241d solid 0.5vw;
 }
 
 }
